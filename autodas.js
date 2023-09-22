@@ -1,13 +1,13 @@
   // ==UserScript==
 // @name         OplusM AUTODAS Phoenix
 // @namespace    https://oplusm.fr
-// @version      1
+// @version      1.5
 // @description  Envoie semi-automatique de prevenance Phoenix
 // @author       Adi Lasri
 // @match        https://phoenixintnl.service-now.com/*
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/Operation-Maintenance/AUTODAS_COS/main/autodas.js
-// @downloadURL  https://raw.githubusercontent.com/Operation-Maintenance/AUTODAS_COS/main/autodas.js
+// @updateURL    https://raw.githubusercontent.com/AdemStars/AUTODAS-PHOENIX/main/autodas.js
+// @downloadURL  https://raw.githubusercontent.com/AdemStars/AUTODAS-PHOENIX/main/autodas.js
 // ==/UserScript==
 
 
