@@ -1,7 +1,7 @@
   // ==UserScript==
 // @name         OplusM AUTODAS Phoenix
 // @namespace    https://oplusm.fr
-// @version      1.5
+// @version      1.6
 // @description  Envoie semi-automatique de prevenance Phoenix
 // @author       Adi Lasri
 // @match        https://phoenixintnl.service-now.com/*
@@ -100,6 +100,7 @@
         body += contact[i] + "%0A";
     }
     body += '%0AAvons-nous votre accord pour l’intervention ? %0A';
+    body += '%0APar ailleurs, pouvez-vous, svp nous donner le contact du gardien ou de la personne sur place en cas de problème ? %0A';
     body += 'Dans l’attente de votre retour.%0A';
     body += 'Cordialement,%0A';
 
