@@ -1,7 +1,7 @@
   // ==UserScript==
 // @name         OplusM AUTODAS Phoenix
 // @namespace    https://oplusm.fr
-// @version      1.6
+// @version      1.7
 // @description  Envoie semi-automatique de prevenance Phoenix
 // @author       Adi Lasri
 // @match        https://phoenixintnl.service-now.com/*
@@ -91,7 +91,7 @@
     body += 'Référence du site : ' + idElement + '.%0A';
     body += 'Lieu de l\'intervention : ' + '.%0A';
     body += 'Nature d\'intervention : ' + idInter + '.%0A';
-    body += 'Sur les équipements de l\’opérateur : Bouygues Telecom.' + '.%0A';
+    body += 'Sur les équipements de l\’opérateur :' + '%0A';
     body += 'Equipements spéciaux  : ' + '.%0A';
     body += 'Motif de l’intervention : ' + idDesc;
     body += '%0ALes Intervenants sont : %0A';
