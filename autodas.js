@@ -1,7 +1,7 @@
   // ==UserScript==
 // @name         OplusM AUTODAS Phoenix
 // @namespace    https://oplusm.fr
-// @version      1.7
+// @version      1.8
 // @description  Envoie semi-automatique de prevenance Phoenix
 // @author       Adi Lasri
 // @match        https://phoenixintnl.service-now.com/*
@@ -70,10 +70,10 @@
 
 
       // Prompt des informations récupéré dans la console
-      console.log("Code site: " + idElement + " Code das : " + idDas + " Société : " + idSociete + " Nature inter :" + idInter + " Description inter : " + idDesc + " Contact : " + contact + " Adresse : " + idAdresse);
+      console.log("Code site: " + idElement + " Code das : " + idDas + " Société : " + idSociete + " Nature inter :" + idInter + " Description inter : " + idDesc + " Contact : " + contact + " Adresse : " + idAdresse + " Operateur : "+ idOperateur);
       console.log("Date debut : " + idDatedebut + " Date fin : " + idDatefin);
       // Appelez la fonction pour la première fois
-      sendEmail(idElement, idDas, idSociete, idAdresse, idInter, idDesc, contacts, DATE,idCrewN,idCrewE,idCrewP);
+      sendEmail(idElement, idDas, idSociete, idAdresse, idInter, idDesc, contacts, DATE,idCrewN,idCrewE,idCrewP,idOperateur);
 
     }, 10000);
    });
@@ -82,7 +82,7 @@
 
 
   // fonction de création du mail
-  function sendEmail(idElement, idDas, idSociete, idAdresse, idInter, idDesc, contact, DATE ,idCrewN,idCrewE,idCrewP) {
+  function sendEmail(idElement, idDas, idSociete, idAdresse, idInter, idDesc, contact, DATE ,idCrewN,idCrewE,idCrewP,idOperateur) {
     var recipient = ''; // pas de destinataire automatique
     var subject = "[PHOENIX TOWER] Demande d'accès sur le site " + idElement + " / "+ idDas+ " / " +idAdresse + DATE  ;
     var body = 'Bonjour, %0A%0A';
@@ -91,7 +91,7 @@
     body += 'Référence du site : ' + idElement + '.%0A';
     body += 'Lieu de l\'intervention : ' + '.%0A';
     body += 'Nature d\'intervention : ' + idInter + '.%0A';
-    body += 'Sur les équipements de l\’opérateur :' + '%0A';
+    body += 'Sur les équipements de l\’opérateur : ' + idOperateur + '%0A';
     body += 'Equipements spéciaux  : ' + '.%0A';
     body += 'Motif de l’intervention : ' + idDesc;
     body += '%0ALes Intervenants sont : %0A';
